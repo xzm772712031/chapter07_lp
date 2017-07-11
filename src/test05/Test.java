@@ -23,16 +23,16 @@ public class Test {
 		penList.add(pg2);
 		penList.add(pg3);
 		penList.add(pg4); 
-	    System.out.println("共计有" + penList.size() + "只企鹅。");
+	   /* System.out.println("共计有" + penList.size() + "只企鹅。");
 		System.out.println("分别是：");
 		for (int i = 0; i < penList.size(); i++) {
 			Penguin pg = (Penguin) penList.get(i);
 			System.out.print(pg.getName());
 			System.out.print("  ");
 			System.out.println(pg.getSex());
-		}
+		}*/
 		Scanner input = new Scanner(System.in);
-		System.out.println("请输入狗的名称：");
+		System.out.print("请输入狗的名称：");
 		String name = input.nextLine();
 		Iterator it = penList.iterator();
 		while(it.hasNext()) {
@@ -49,6 +49,8 @@ public class Test {
 			}
 			
 		}
+		
+		
 		/*penList.remove(penList.size()-1);
 		penList.remove(pg4);
 		System.out.println("删除之后还有" + penList.size() + "只企鹅。");
